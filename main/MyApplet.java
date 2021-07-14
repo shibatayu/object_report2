@@ -14,7 +14,7 @@ public class MyApplet extends PApplet {
     ellipseMode(CENTER);
     rectMode(CENTER);
     try {
-      z[0].setPosition(200, 500);
+      z[0].setPosition(200, 200);
       z[1].setPosition(100, 200);
     } catch (IllegalArgumentException e) { //例外処理
       System.out.println("入力された値が不正です。");
@@ -28,7 +28,6 @@ public class MyApplet extends PApplet {
     z[0].move();
     z[1].display();
     z[1].move();
-    z[1].x = 300;
   }
 
   public void mousePressed() {

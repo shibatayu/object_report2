@@ -5,8 +5,7 @@ abstract public class Zoog {
   protected PApplet p;
   protected int x = 100;
   protected int y = 100;
-  protected int dx = 1;
-  protected int dy = 1;
+  protected int d = 1;
   protected int zoogCol = 255;
   protected int zoogRightEyeCol = 0;
   protected int zoogLeftEyeCol = 0;
@@ -48,5 +47,16 @@ abstract public class Zoog {
   
   abstract public void move();
   
-  abstract public void eyePressed(int mouX, int mouY);
+  public void eyePressed(int mouX, int mouY) {
+    if(x-27 <= mouX && mouX <= x-11 && y-46 <= mouY && mouY <= y-14) { //左目判定
+      zoogLeftEyeCol = 255;
+      zoogEyeL = false;
+    } else if(x+11 <= mouX && mouX <= x+27 && y-46 <= mouY && mouY <= y-14) { //右目判定
+      zoogRightEyeCol = 255;
+      zoogEyeR = false;
+    }
+    if(!zoogEyeL && !zoogEyeR) {
+      d = 0;
+    }
+  }
 }
