@@ -36,6 +36,12 @@ public class Ballen {
     p.stroke(0);
     p.fill(zoogCol);
     p.ellipse(x+5, y+10, 5, 5);
+  }
 
+  public void move() {
+    if(x <= 25 || p.width - 25 <= x) {
+      d *= -1;
+    }
+    x += d;
   }
 }

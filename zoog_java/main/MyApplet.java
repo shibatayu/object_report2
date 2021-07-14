@@ -27,6 +27,7 @@ public class MyApplet extends PApplet {
     z[2].display();
     z[2].move();
     b.display();
+    b.move();
   }
 
   public void mousePressed() {
