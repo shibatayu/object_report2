@@ -16,15 +16,6 @@ public class MyApplet extends PApplet {
   public void setup() {
     ellipseMode(CENTER);
     rectMode(CENTER);
-    try {
-      z[0].setPosition(200, 200);
-      z[1].setPosition(100, 200);
-      z[2].setPosition(200, 200);
-      b.setPosition(300, 200);
-    } catch (IllegalArgumentException e) { //例外処理
-      System.out.println("入力された値が不正です。");
-      System.exit(1); //強制終了
-    }
   }
 
   public void draw() {

@@ -3,9 +3,9 @@ import processing.core.*;
 
 abstract public class Zoog implements MovableShape {
   protected PApplet p;
-  protected int x = 100;
-  protected int y = 100;
-  protected int d = 1;
+  protected float x = 100;
+  protected float y = 100;
+  protected float d = 1;
   protected int zoogCol = 255;
   protected int zoogRightEyeCol = 0;
   protected int zoogLeftEyeCol = 0;
@@ -14,16 +14,6 @@ abstract public class Zoog implements MovableShape {
 
   protected Zoog(PApplet pa) {
     p = pa;
-  }
-
-  public void setPosition(int x1, int y1) {
-    if(x1 < 30 || p.width - 30 < x1) {
-      throw new IllegalArgumentException("xの値が画面外です。");
-    } else if(y1 < 60 || p.height - 60 < y1) {
-      throw new IllegalArgumentException("yの値が画面外です。");
-    }
-    x = x1;
-    y = y1;
   }
   
   public void display() {
