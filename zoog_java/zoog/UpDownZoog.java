@@ -7,7 +7,7 @@ public class UpDownZoog extends Zoog {
   }
 
   public void move() {
-    if(y <= 60 || p.height - 60 <= y) {
+    if((int)y <= 60 || p.height - 60 <= (int)y) {
       d *= -1;
     }
     y += d;

@@ -1,11 +1,13 @@
 package zoog_java.zoog;
 import processing.core.*;
 
-abstract public class Zoog implements MovableShape {
+abstract public class Zoog {
   protected PApplet p;
-  protected int x = 100;
-  protected int y = 100;
-  protected int d = 1;
+  protected float x = 100;
+  protected float y = 100;
+  protected float t = 0;
+  protected float d = 1;
+  protected double td = 0.01;
   protected int zoogCol = 255;
   protected int zoogRightEyeCol = 0;
   protected int zoogLeftEyeCol = 0;
@@ -37,7 +39,7 @@ abstract public class Zoog implements MovableShape {
   
   abstract public void move();
   
-  public void eyePressed(int mouX, int mouY) {
+  public void eyePressed(float mouX, float mouY) {
     if(x-27 <= mouX && mouX <= x-11 && y-46 <= mouY && mouY <= y-14) { //左目判定
       zoogLeftEyeCol = 255;
       zoogEyeL = false;
@@ -47,6 +49,7 @@ abstract public class Zoog implements MovableShape {
     }
     if(!zoogEyeL && !zoogEyeR) {
       d = 0;
+      td = 0.0;
     }
   }
 }

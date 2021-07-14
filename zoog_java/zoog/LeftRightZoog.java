@@ -7,7 +7,7 @@ public class LeftRightZoog extends Zoog {
   }
   
   public void move() {
-    if(x <= 30 || p.width - 30 <= x) {
+    if((int)x <= 30 || p.width - 30 <= (int)x) {
       d *= -1;
     }
     x += d;
