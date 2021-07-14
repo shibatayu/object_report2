@@ -1,5 +1,5 @@
-package zoog_java.main;
-import zoog_java.zoog.*;
+package myprogram.main;
+import myprogram.zoog.*;
 import processing.core.*;
 
 public class MyApplet extends PApplet {
@@ -37,6 +37,6 @@ public class MyApplet extends PApplet {
   }
 
   public static void main(String[] args) {
-    PApplet.main("zoog_java.main.MyApplet");
+    PApplet.main("myprogram.main.MyApplet");
   }
 }
