@@ -5,12 +5,14 @@ public class CircleZoog extends Zoog {
   public CircleZoog(PApplet pa) {
     super(pa);
   }
+  double xf = (double)x;
+  double yf = (double)y;
 
   int r = 100;
-  float t = 0;
+  double t = 0.0;
   public void move() {
     t += 0.1;
-    x = r*(float)Math.cos(t);
-    y = r*(float)Math.sin(t);
+    xf = r*Math.cos(t);
+    yf = r*Math.sin(t);
   }
 }

@@ -3,9 +3,9 @@ import processing.core.*;
 
 abstract public class Zoog implements MovableShape {
   protected PApplet p;
-  protected float x = 100;
-  protected float y = 100;
-  protected float d = 1;
+  protected int x = 100;
+  protected int y = 100;
+  protected int d = 1;
   protected int zoogCol = 255;
   protected int zoogRightEyeCol = 0;
   protected int zoogLeftEyeCol = 0;
