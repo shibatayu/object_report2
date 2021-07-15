@@ -39,7 +39,7 @@ abstract public class Zoog implements MovableShape{
   
   abstract public void move();
   
-  public void eyePressed(float mouX, float mouY) {
+  public void Pressed(float mouX, float mouY) {
     if(x-27 <= mouX && mouX <= x-11 && y-46 <= mouY && mouY <= y-14) { //左目判定
       zoogLeftEyeCol = 255;
       zoogEyeL = false;

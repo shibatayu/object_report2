@@ -7,7 +7,8 @@ public class Ballen implements MovableShape{
   protected int y = 300;
   protected int d = 1;
   protected int BallenCol = 255;
-  protected int zoogMiddleNoseCol = 0;
+  protected int ballenEyeCol = 0;
+  protected int ballenMiddleNoseCol = 0;
   protected boolean BallenJudge = true;
 
   public Ballen(PApplet pa) {
@@ -20,19 +21,19 @@ public class Ballen implements MovableShape{
     p.fill(BallenCol);
     p.ellipse(x, y, 50, 50);
     //MidleNose
-    p.fill(zoogMiddleNoseCol);
+    p.fill(ballenMiddleNoseCol);
     p.ellipse(x, y, 10, 10);
     p.stroke(0);
-    p.fill(zoogMiddleNoseCol);
+    p.fill(ballenMiddleNoseCol);
     p.ellipse(x-10, y, 10, 10);
     p.stroke(0);
-    p.fill(zoogMiddleNoseCol);
+    p.fill(ballenMiddleNoseCol);
     p.ellipse(x+10, y, 10, 10);
     p.stroke(0);
-    p.fill(BallenCol);
+    p.fill(ballenEyeCol);
     p.ellipse(x-5, y-10, 5, 5);
     p.stroke(0);
-    p.fill(BallenCol);
+    p.fill(ballenEyeCol);
     p.ellipse(x+5, y-10, 5, 5);
   }
 
@@ -43,9 +44,9 @@ public class Ballen implements MovableShape{
     x += d;
   }
 
-  public void eyePressed(float mouX, float mouY) {
+  public void Pressed(float mouX, float mouY) {
     if((mouX-x)*(mouX-x) + (mouY-y)*(mouY-y) <=25 ) {
-      zoogMiddleNoseCol = 255;
+      ballenMiddleNoseCol = 255;
       BallenJudge = false;
     }
     if(!BallenJudge) {

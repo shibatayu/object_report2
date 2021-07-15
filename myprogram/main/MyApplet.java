@@ -37,7 +37,7 @@ public class MyApplet extends PApplet {
 
   public void mousePressed() {
     for(int i=0; i<4; i++) {
-      m[i].eyePressed(mouseX, mouseY);
+      m[i].Pressed(mouseX, mouseY);
     }
     // z[0].eyePressed(mouseX, mouseY);
     // z[1].eyePressed(mouseX, mouseY);
