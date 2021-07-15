@@ -19,7 +19,7 @@ public class Ballen implements MovableShape{
     // draw body
     p.stroke(0);
     p.fill(BallenCol);
-    p.ellipse(x, y, 50, 50);
+    p.ellipse(x, y, 50, 40);
     //MidleNose
     p.fill(ballenMiddleNoseCol);
     p.ellipse(x, y, 10, 10);
