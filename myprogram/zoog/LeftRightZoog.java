@@ -1,4 +1,4 @@
-package zoog_java.zoog;
+package myprogram.zoog;
 import processing.core.*;
 
 public class LeftRightZoog extends Zoog {

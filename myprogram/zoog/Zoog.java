@@ -1,7 +1,7 @@
-package zoog_java.zoog;
+package myprogram.zoog;
 import processing.core.*;
 
-abstract public class Zoog {
+abstract public class Zoog implements MovableShape{
   protected PApplet p;
   protected float x = 100;
   protected float y = 100;
