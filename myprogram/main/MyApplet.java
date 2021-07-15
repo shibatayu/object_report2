@@ -42,7 +42,7 @@ public class MyApplet extends PApplet {
     // z[0].eyePressed(mouseX, mouseY);
     // z[1].eyePressed(mouseX, mouseY);
     // z[2].eyePressed(mouseX, mouseY);
-    // b.eyePressed(mouseX, mouseY);
+    // b.eyePressed(mouseX, mouseY); 
   }
 
 
